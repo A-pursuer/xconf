@@ -3,11 +3,12 @@
     "rules": [
       {
         "type": "field",
-        "ip": [
+        "domain": [
           "geosite:category-porn"
         ],
         "outboundTag": "blocked"
       }
     ]
   }
+
 }
