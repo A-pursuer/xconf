@@ -1,0 +1,40 @@
+{
+    "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": X_REALITY_PORT,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "X_REALITY_UUID",
+            "flow": "xtls-rprx-vision"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "raw",
+        "security": "reality",
+        "realitySettings": {
+          "dest": "X_REALITY_DEST",
+          "serverNames": [
+            "X_REALITY_SERVER"
+          ], 
+          "privateKey": "X_REALITY_PRIVATE_KEY",
+          "shortIds": [
+            "X_REALITY_SHORT_ID"
+          ]
+        }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls",
+          "quic"
+        ]
+      }
+    }
+  ]
+}

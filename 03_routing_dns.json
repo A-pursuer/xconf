@@ -1,0 +1,14 @@
+{
+"routing": {
+    "domainStrategy": "IPOnDemand",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "xray-DNS"
+        ],
+        "outboundTag": "direct"
+      }
+    ]
+  }
+}
